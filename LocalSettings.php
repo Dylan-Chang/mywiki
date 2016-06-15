@@ -38,7 +38,7 @@ $wgResourceBasePath = $wgScriptPath;
 
 ## The URL path to the logo.  Make sure you change this from the default,
 ## or else you'll overwrite your logo when you upgrade!
-$wgLogo = "$wgResourceBasePath/resources/assets/wiki.png";
+$wgLogo = "$wgResourceBasePath/resources/assets/enwiki.png";
 
 ## UPO means: this is also a user preference option
 
@@ -67,6 +67,9 @@ $wgDBTableOptions = "ENGINE=InnoDB, DEFAULT CHARSET=utf8";
 
 # Experimental charset support for MySQL 5.0.
 $wgDBmysql5 = false;
+
+
+$wgRawHtml = true;
 
 ## Shared memory settings
 $wgMainCacheType = CACHE_NONE;
@@ -133,6 +136,12 @@ wfLoadSkin( 'CologneBlue' );
 wfLoadSkin( 'Modern' );
 wfLoadSkin( 'MonoBook' );
 wfLoadSkin( 'Vector' );
+wfLoadExtension( 'WikiEditor' );
+
+$wgDefaultUserOptions['usebetatoolbar'] =1;
+
+
+
 
 
 # End of automatically generated settings.
